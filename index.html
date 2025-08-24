@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Polaco Vidrios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="wrapper">
+    <h1>El Polaco Vidrios</h1>
+    
+    <form id="formulario">
+      <label for="precio-vidrio">Precio del vidrio (por m²)</label>
+      <input type="text" id="precio-vidrio" placeholder="Ej: 2500.50" required>
+
+      <label for="base-vidrio">Base (m)</label>
+      <input type="text" id="base-vidrio" placeholder="Ej: 1.25" required>
+
+      <label for="altura-vidrio">Altura (m)</label>
+      <input type="text" id="altura-vidrio" placeholder="Ej: 2,10" required>
+
+      <button type="button" id="calcular">Calcular</button>
+    </form>
+
+    <p class="resultado">Total: <span id="precio-final">—</span></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

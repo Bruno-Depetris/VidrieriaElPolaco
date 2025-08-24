@@ -1,0 +1,96 @@
+/* Reset limpio */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base */
+body {
+  font-family: system-ui, sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Contenedor */
+.wrapper {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Título */
+h1 {
+  color: #ffcc00;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+/* Formularios */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+input {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background: #1a1a1a;
+  color: #f5f5f5;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 2px solid #ffcc00;
+}
+
+/* Botón */
+button {
+  padding: 0.9rem;
+  background: #ffcc00;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #e6b800;
+}
+
+/* Resultado */
+.resultado {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  input, button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
